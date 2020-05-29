@@ -7,84 +7,114 @@
 //
 
 import UIKit
+import MJRefresh
+import SDWebImage
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController, UISearchBarDelegate {
 
-    var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
-
+    let randomService = RandomerService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        navigationItem.leftBarButtonItem = editButtonItem
+        
+        tableView.rowHeight = 100
+        tableView.sectionHeaderHeight = 50
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        navigationItem.rightBarButtonItem = addButton
-        if let split = splitViewController {
-            let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
-        super.viewWillAppear(animated)
-    }
-
-    @objc
-    func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            self?.randomService.resetPage()
+            self?.randomService.fetchRandomers(finished: { (succeed) in
+                self?.tableView.mj_header?.endRefreshing()
+                self?.tableView.reloadData()
+            })
+        })
+        
+        tableView.mj_footer = MJRefreshAutoStateFooter(refreshingBlock: { [weak self] in
+            self?.randomService.fetchRandomers(finished: { (succeed) in
+                self?.tableView.mj_footer?.endRefreshing()
+                self?.tableView.reloadData()
+            })
+        })
+        
+        tableView.mj_header?.beginRefreshing()
     }
 
     // MARK: - Segues
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                let object = randomService.randomers[indexPath.row] as! NSDictionary
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.randomer = object
                 controller.navigationItem.leftItemsSupplementBackButton = true
-                detailViewController = controller
             }
         }
     }
 
     // MARK: - Table View
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return randomService.randomers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerView
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        cell.accessoryType = .detailDisclosureButton
+        
+        let avatar = cell.contentView.viewWithTag(10) as! UIImageView
+        let name = cell.contentView.viewWithTag(20) as! UILabel
+        let gender = cell.contentView.viewWithTag(30) as! UILabel
+        let dob = cell.contentView.viewWithTag(40) as! UILabel
+        
+        let randomer = randomService.randomers[indexPath.row] as! NSDictionary
+       
+        // avatar
+        let picture = randomer["picture"] as! NSDictionary
+        avatar.sd_setImage(with: URL(string: picture["thumbnail"] as! String), completed: nil)
+        
+        // title and name
+        let nameDic = randomer["name"] as! NSDictionary
+        name.text = (nameDic["title"] as! String) + ". " + (nameDic["first"] as! String) + " " + (nameDic["last"] as! String)
+        
+        // gender
+        gender.text = randomer["gender"] as? String
+        
+        // dob
+        let dobDic = randomer["dob"] as! NSDictionary
+        dob.text = dobDic["date"] as? String
+        
         return cell
     }
-
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    
+    // MARK: - Search Bar
+    private var _headerView: UIView?
+    private var headerView: UIView? {
+        get {
+            if (_headerView == nil) {
+                _headerView = UIView()
+                let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+                _headerView?.addSubview(searchBar)
+                
+                searchBar.delegate = self
+            }
+            return _headerView
         }
     }
-
-
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        tableView.mj_header?.beginRefreshing()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        randomService.setupKeyWord(keyWord: searchText)
+    }
 }
 

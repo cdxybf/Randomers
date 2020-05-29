@@ -1,8 +1,11 @@
 version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
-options: "25f899918241aa42ffc62f321ebe7d79"
-build_time: [1590707190, 281697000]
+options: "9c591f425481dbd9f3b111175ea18aa3"
+build_time: [1590725879, 425845000]
 inputs:
-  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/AppDelegate.swift": [1590706751, 860755682]
-  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/SceneDelegate.swift": [1590706751, 866099000]
-  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/MasterViewController.swift": [1590706751, 878051758]
-  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/DetailViewController.swift": [1590706751, 886103153]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/AppDelegate.swift": [1590708199, 386328221]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/Service/RandomerService.swift": [1590725796, 46013164]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/Model/Randomer.swift": [1590715491, 475789262]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/Constants/Environment.swift": [1590718940, 555637985]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/SceneDelegate.swift": [1590724227, 299910102]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/MasterViewController.swift": [1590724389, 752028188]
+  "/Users/chengrosman/Desktop/Projects/Randomers/Randomers/DetailViewController.swift": [1590724280, 578949701]

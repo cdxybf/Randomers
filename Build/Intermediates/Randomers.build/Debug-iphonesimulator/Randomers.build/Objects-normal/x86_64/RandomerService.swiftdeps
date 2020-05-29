@@ -1,0 +1,440 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CompletionBlock"
+- "RandomerService"
+provides-nominal:
+- "9Randomers15RandomerServiceC"
+provides-member:
+- ["9Randomers15RandomerServiceC", ""]
+provides-dynamic-lookup:
+- "fetchOfflineRandomers"
+- "fetchRandomers"
+- "keyWord"
+- "pageIndex"
+- "pageSize"
+- "randomers"
+- "resetPage"
+- "setupKeyWord"
+depends-top-level:
+- !private "+"
+- !private "+="
+- !private "AFHTTPSessionManager"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CastingPrecedence"
+- "CompletionBlock"
+- !private "Environment"
+- !private "Error"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "NSDictionary"
+- "NSMutableArray"
+- "NSObject"
+- "RandomerService"
+- "String"
+- !private "StringLiteralType"
+- !private "URLSessionDataTask"
+- "Void"
+- !private "print"
+depends-member:
+- !private ["So20AFHTTPSessionManagerC", "get"]
+- !private ["So20AFHTTPSessionManagerC", "init"]
+- !private ["So19AFURLSessionManagerC", "get"]
+- !private ["So19AFURLSessionManagerC", "init"]
+- !private ["s7CVarArgP", "AFHTTPSessionManager"]
+- !private ["s7CVarArgP", "Environment"]
+- ["s7CVarArgP", "NSMutableArray"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addObjects"]
+- !private ["s7CVarArgP", "baseUrl"]
+- !private ["s7CVarArgP", "get"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "keyWord"]
+- !private ["s7CVarArgP", "pageIndex"]
+- !private ["s7CVarArgP", "pageSize"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "randomers"]
+- !private ["s7CVarArgP", "removeAllObjects"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "AFHTTPSessionManager"]
+- !private ["s28CustomDebugStringConvertibleP", "Environment"]
+- ["s28CustomDebugStringConvertibleP", "NSMutableArray"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addObjects"]
+- !private ["s28CustomDebugStringConvertibleP", "baseUrl"]
+- !private ["s28CustomDebugStringConvertibleP", "get"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "keyWord"]
+- !private ["s28CustomDebugStringConvertibleP", "pageIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "pageSize"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "randomers"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAllObjects"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "addObjects"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeAllObjects"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "AFHTTPSessionManager"]
+- !private ["s23CustomStringConvertibleP", "Environment"]
+- ["s23CustomStringConvertibleP", "NSMutableArray"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addObjects"]
+- !private ["s23CustomStringConvertibleP", "baseUrl"]
+- !private ["s23CustomStringConvertibleP", "get"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "keyWord"]
+- !private ["s23CustomStringConvertibleP", "pageIndex"]
+- !private ["s23CustomStringConvertibleP", "pageSize"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "randomers"]
+- !private ["s23CustomStringConvertibleP", "removeAllObjects"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["9Randomers11EnvironmentC", "baseUrl"]
+- !private ["9Randomers11EnvironmentC", "shared"]
+- !private ["SQ", "AFHTTPSessionManager"]
+- !private ["SQ", "Environment"]
+- ["SQ", "NSMutableArray"]
+- ["SQ", ""]
+- !private ["SQ", "addObjects"]
+- !private ["SQ", "baseUrl"]
+- !private ["SQ", "get"]
+- ["SQ", "init"]
+- !private ["SQ", "keyWord"]
+- !private ["SQ", "pageIndex"]
+- !private ["SQ", "pageSize"]
+- !private ["SQ", "print"]
+- !private ["SQ", "randomers"]
+- !private ["SQ", "removeAllObjects"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "subscript"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "addObjects"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAllObjects"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["SH", "AFHTTPSessionManager"]
+- !private ["SH", "Environment"]
+- ["SH", "NSMutableArray"]
+- ["SH", ""]
+- !private ["SH", "addObjects"]
+- !private ["SH", "baseUrl"]
+- !private ["SH", "get"]
+- ["SH", "init"]
+- !private ["SH", "keyWord"]
+- !private ["SH", "pageIndex"]
+- !private ["SH", "pageSize"]
+- !private ["SH", "print"]
+- !private ["SH", "randomers"]
+- !private ["SH", "removeAllObjects"]
+- !private ["SH", "shared"]
+- !private ["SH", "subscript"]
+- !private ["So7NSArrayC", "addObjects"]
+- ["So7NSArrayC", "init"]
+- !private ["So7NSArrayC", "removeAllObjects"]
+- !private ["So8NSCodingP", "addObjects"]
+- !private ["So8NSCodingP", "get"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "removeAllObjects"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So9NSCopyingP", "addObjects"]
+- !private ["So9NSCopyingP", "get"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "removeAllObjects"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So12NSDictionaryC", "subscript"]
+- !private ["So17NSFastEnumerationP", "addObjects"]
+- ["So17NSFastEnumerationP", "init"]
+- !private ["So17NSFastEnumerationP", "removeAllObjects"]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So14NSMutableArrayC", "addObjects"]
+- ["So14NSMutableArrayC", "init"]
+- !private ["So14NSMutableArrayC", "removeAllObjects"]
+- !private ["So16NSMutableCopyingP", "addObjects"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "removeAllObjects"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "AFHTTPSessionManager"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Environment"]
+- !private ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "NSDictionary"]
+- ["So8NSObjectC", "NSMutableArray"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "URLSessionDataTask"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addObjects"]
+- !private ["So8NSObjectC", "baseUrl"]
+- ["So8NSObjectC", "fetchOfflineRandomers"]
+- ["So8NSObjectC", "fetchRandomers"]
+- !private ["So8NSObjectC", "get"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "keyWord"]
+- ["So8NSObjectC", "pageIndex"]
+- ["So8NSObjectC", "pageSize"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "randomers"]
+- !private ["So8NSObjectC", "removeAllObjects"]
+- ["So8NSObjectC", "resetPage"]
+- ["So8NSObjectC", "setupKeyWord"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "subscript"]
+- !private ["So8NSObjectP", "AFHTTPSessionManager"]
+- !private ["So8NSObjectP", "Environment"]
+- ["So8NSObjectP", "NSMutableArray"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObjects"]
+- !private ["So8NSObjectP", "baseUrl"]
+- !private ["So8NSObjectP", "get"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "keyWord"]
+- !private ["So8NSObjectP", "pageIndex"]
+- !private ["So8NSObjectP", "pageSize"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "randomers"]
+- !private ["So8NSObjectP", "removeAllObjects"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "subscript"]
+- !private ["So14NSSecureCodingP", "addObjects"]
+- !private ["So14NSSecureCodingP", "get"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "removeAllObjects"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["9Randomers15RandomerServiceC", "AFHTTPSessionManager"]
+- ["9Randomers15RandomerServiceC", "Bool"]
+- !private ["9Randomers15RandomerServiceC", "Environment"]
+- !private ["9Randomers15RandomerServiceC", "Error"]
+- !private ["9Randomers15RandomerServiceC", "NSDictionary"]
+- ["9Randomers15RandomerServiceC", "NSMutableArray"]
+- ["9Randomers15RandomerServiceC", "String"]
+- !private ["9Randomers15RandomerServiceC", "URLSessionDataTask"]
+- ["9Randomers15RandomerServiceC", "Void"]
+- ["9Randomers15RandomerServiceC", "deinit"]
+- ["9Randomers15RandomerServiceC", "fetchOfflineRandomers"]
+- ["9Randomers15RandomerServiceC", "fetchRandomers"]
+- ["9Randomers15RandomerServiceC", "init"]
+- !private ["9Randomers15RandomerServiceC", "keyWord"]
+- !private ["9Randomers15RandomerServiceC", "pageIndex"]
+- !private ["9Randomers15RandomerServiceC", "pageSize"]
+- !private ["9Randomers15RandomerServiceC", "print"]
+- ["9Randomers15RandomerServiceC", "randomers"]
+- ["9Randomers15RandomerServiceC", "resetPage"]
+- ["9Randomers15RandomerServiceC", "setupKeyWord"]
+- !private ["ST", "addObjects"]
+- ["ST", "init"]
+- !private ["ST", "removeAllObjects"]
+- !private ["ST", "subscript"]
+- !private ["So24NSURLSessionDataDelegateP", "get"]
+- !private ["So24NSURLSessionDataDelegateP", "init"]
+- !private ["So20NSURLSessionDelegateP", "get"]
+- !private ["So20NSURLSessionDelegateP", "init"]
+- !private ["So28NSURLSessionDownloadDelegateP", "get"]
+- !private ["So28NSURLSessionDownloadDelegateP", "init"]
+- !private ["So24NSURLSessionTaskDelegateP", "get"]
+- !private ["So24NSURLSessionTaskDelegateP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "addObjects"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAllObjects"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AFHTTPSessionManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Environment"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "NSMutableArray"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObjects"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "baseUrl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "get"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "keyWord"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pageIndex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pageSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "randomers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAllObjects"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AFHTTPSessionManager"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Environment"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSMutableArray"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addObjects"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "baseUrl"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "get"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "keyWord"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pageIndex"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pageSize"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "randomers"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeAllObjects"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
+depends-nominal:
+- !private "So20AFHTTPSessionManagerC"
+- !private "So19AFURLSessionManagerC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "9Randomers11EnvironmentC"
+- "SQ"
+- !private "s5ErrorP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "SH"
+- "So7NSArrayC"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So12NSDictionaryC"
+- "So17NSFastEnumerationP"
+- "So14NSMutableArrayC"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So14NSSecureCodingP"
+- "9Randomers15RandomerServiceC"
+- "ST"
+- !private "So24NSURLSessionDataDelegateP"
+- !private "So20NSURLSessionDelegateP"
+- !private "So28NSURLSessionDownloadDelegateP"
+- !private "So24NSURLSessionTaskDelegateP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefresh-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ExtendedCacheData.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/WKWebView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/NSBundle+MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIScrollView+MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIView+MJExtension.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIScrollView+MJExtension.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshStateHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshGifHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshNormalHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDGraphicsImageRenderer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackStateFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoStateFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackGifFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoGifFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackNormalFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoNormalFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFCompatibilityMacros.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshComponent.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshConst.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c0ef7b118ba263b2aad60ecf663c0eaa"

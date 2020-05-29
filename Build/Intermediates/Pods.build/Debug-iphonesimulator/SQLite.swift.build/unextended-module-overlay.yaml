@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/chengrosman/Desktop/Projects/Randomers/Build/Intermediates/Pods.build/Debug-iphonesimulator/SQLite.swift.build/unextended-module.modulemap",
+    }]
+  }]
+}

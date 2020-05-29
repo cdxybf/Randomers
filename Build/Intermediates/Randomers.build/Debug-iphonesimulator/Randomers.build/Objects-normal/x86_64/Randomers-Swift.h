@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -213,56 +214,80 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC9Randomers11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-- (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
+- (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 @class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9Randomers20DetailViewController")
 @interface DetailViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified detailDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified avatar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified name;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gender;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dob;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+/// Configure the constants e.g. Url, API Keys, Third-party Keys in this class. It is extendable.
+SWIFT_CLASS("_TtC9Randomers11Environment")
+@interface Environment : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIStoryboardSegue;
 @class UITableView;
+@class UIView;
 @class UITableViewCell;
+@class UISearchBar;
 
 SWIFT_CLASS("_TtC9Randomers20MasterViewController")
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <UISearchBarDelegate>
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)insertNewObject:(id _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9Randomers8Randomer")
+@interface Randomer : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9Randomers15RandomerService")
+@interface RandomerService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIWindow;
 @class UIScene;
 @class UISplitViewController;
 
-SWIFT_CLASS("_TtC9Randomers13SceneDelegate")
+SWIFT_CLASS("_TtC9Randomers13SceneDelegate") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface SceneDelegate : UIResponder <UISplitViewControllerDelegate, UIWindowSceneDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-- (void)scene:(UIScene * _Nonnull)scene willConnectToSession:(UISceneSession * _Nonnull)session options:(UISceneConnectionOptions * _Nonnull)connectionOptions;
-- (void)sceneDidDisconnect:(UIScene * _Nonnull)scene;
-- (void)sceneDidBecomeActive:(UIScene * _Nonnull)scene;
-- (void)sceneWillResignActive:(UIScene * _Nonnull)scene;
-- (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
-- (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
+- (void)scene:(UIScene * _Nonnull)scene willConnectToSession:(UISceneSession * _Nonnull)session options:(UISceneConnectionOptions * _Nonnull)connectionOptions SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)sceneDidDisconnect:(UIScene * _Nonnull)scene SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)sceneDidBecomeActive:(UIScene * _Nonnull)scene SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)sceneWillResignActive:(UIScene * _Nonnull)scene SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (BOOL)splitViewController:(UISplitViewController * _Nonnull)splitViewController collapseSecondaryViewController:(UIViewController * _Nonnull)secondaryViewController ontoPrimaryViewController:(UIViewController * _Nonnull)primaryViewController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		1DF1E9DA248079C1001592F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1E9D8248079C1001592F2 /* LaunchScreen.storyboard */; };
 		1DF1E9E5248079C1001592F2 /* RandomersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1E9E4248079C1001592F2 /* RandomersTests.swift */; };
 		1DF1E9F0248079C1001592F2 /* RandomersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1E9EF248079C1001592F2 /* RandomersUITests.swift */; };
+		1DF5580924807D5600BC6DCF /* Randomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5580824807D5600BC6DCF /* Randomer.swift */; };
+		1DF5580C2480802100BC6DCF /* RandomerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5580B2480802100BC6DCF /* RandomerService.swift */; };
+		1DF5580F248080DD00BC6DCF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF5580E248080DD00BC6DCF /* Environment.swift */; };
 		91FFD7B980535BECB286EE51 /* Pods_Randomers_RandomersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0776E8052DB65E9F18E89C9D /* Pods_Randomers_RandomersUITests.framework */; };
 		CB66FAA0C31FA246B53C1841 /* Pods_RandomersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB40967F3838C2262453993 /* Pods_RandomersTests.framework */; };
 		CDF837AC29E1C1DE3B65C068 /* Pods_Randomers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07258F26FD4D0CBB9C020807 /* Pods_Randomers.framework */; };
@@ -57,6 +60,9 @@
 		1DF1E9EB248079C1001592F2 /* RandomersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF1E9EF248079C1001592F2 /* RandomersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomersUITests.swift; sourceTree = "<group>"; };
 		1DF1E9F1248079C2001592F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF5580824807D5600BC6DCF /* Randomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomer.swift; sourceTree = "<group>"; };
+		1DF5580B2480802100BC6DCF /* RandomerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomerService.swift; sourceTree = "<group>"; };
+		1DF5580E248080DD00BC6DCF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		62FA25EDAFC26AD5F37F639E /* Pods-RandomersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomersTests.release.xcconfig"; path = "Target Support Files/Pods-RandomersTests/Pods-RandomersTests.release.xcconfig"; sourceTree = "<group>"; };
 		66027A6BE26C547F7404FF48 /* Pods-Randomers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomers.release.xcconfig"; path = "Target Support Files/Pods-Randomers/Pods-Randomers.release.xcconfig"; sourceTree = "<group>"; };
 		6BB40967F3838C2262453993 /* Pods_RandomersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +124,9 @@
 		1DF1E9CA248079BF001592F2 /* Randomers */ = {
 			isa = PBXGroup;
 			children = (
+				1DF5580D248080C700BC6DCF /* Constants */,
+				1DF5580A2480800F00BC6DCF /* Service */,
+				1DF5580724807D0100BC6DCF /* Model */,
 				1DF1E9CB248079BF001592F2 /* AppDelegate.swift */,
 				1DF1E9CD248079BF001592F2 /* SceneDelegate.swift */,
 				1DF1E9CF248079BF001592F2 /* MasterViewController.swift */,
@@ -146,6 +155,30 @@
 				1DF1E9F1248079C2001592F2 /* Info.plist */,
 			);
 			path = RandomersUITests;
+			sourceTree = "<group>";
+		};
+		1DF5580724807D0100BC6DCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5580824807D5600BC6DCF /* Randomer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF5580A2480800F00BC6DCF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5580B2480802100BC6DCF /* RandomerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1DF5580D248080C700BC6DCF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5580E248080DD00BC6DCF /* Environment.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		3D216337B91B14A7F1ECBFCD /* Pods */ = {
@@ -182,6 +215,7 @@
 				1DF1E9C4248079BF001592F2 /* Sources */,
 				1DF1E9C5248079BF001592F2 /* Frameworks */,
 				1DF1E9C6248079BF001592F2 /* Resources */,
+				FB6476A2C2CEE01300421D23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +253,7 @@
 				1DF1E9E7248079C1001592F2 /* Sources */,
 				1DF1E9E8248079C1001592F2 /* Frameworks */,
 				1DF1E9E9248079C1001592F2 /* Resources */,
+				43199579DEC2C963874271FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +358,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		43199579DEC2C963874271FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomers-RandomersUITests/Pods-Randomers-RandomersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomers-RandomersUITests/Pods-Randomers-RandomersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Randomers-RandomersUITests/Pods-Randomers-RandomersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5AB44F2B37C5A7DC25DA18CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +419,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FB6476A2C2CEE01300421D23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomers/Pods-Randomers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Randomers/Pods-Randomers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Randomers/Pods-Randomers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -375,6 +444,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF1E9CC248079BF001592F2 /* AppDelegate.swift in Sources */,
+				1DF5580C2480802100BC6DCF /* RandomerService.swift in Sources */,
+				1DF5580924807D5600BC6DCF /* Randomer.swift in Sources */,
+				1DF5580F248080DD00BC6DCF /* Environment.swift in Sources */,
 				1DF1E9CE248079BF001592F2 /* SceneDelegate.swift in Sources */,
 				1DF1E9D0248079BF001592F2 /* MasterViewController.swift in Sources */,
 				1DF1E9D2248079BF001592F2 /* DetailViewController.swift in Sources */,

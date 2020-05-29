@@ -6,196 +6,369 @@ provides-nominal:
 provides-member:
 - ["9Randomers20DetailViewControllerC", ""]
 provides-dynamic-lookup:
+- "avatar"
 - "configureView"
-- "detailDescriptionLabel"
-- "detailItem"
+- "dob"
+- "gender"
+- "name"
+- "randomer"
 - "viewDidLoad"
 depends-top-level:
+- !private "+"
 - "AssignmentPrecedence"
+- "CastingPrecedence"
 - "DetailViewController"
-- "NSDate"
+- "NSDictionary"
+- !private "String"
+- !private "StringLiteralType"
+- "UIImageView"
 - "UILabel"
 - "UIViewController"
+- !private "URL"
+- !private "UnicodeScalarType"
 depends-member:
+- !private ["So15CALayerDelegateP", "sd_setImage"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "URL"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "avatar"]
 - !private ["s7CVarArgP", "configureView"]
-- !private ["s7CVarArgP", "description"]
-- !private ["s7CVarArgP", "detailDescriptionLabel"]
-- !private ["s7CVarArgP", "detailItem"]
+- !private ["s7CVarArgP", "dob"]
+- !private ["s7CVarArgP", "gender"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "randomer"]
+- !private ["s7CVarArgP", "sd_setImage"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "avatar"]
 - !private ["s28CustomDebugStringConvertibleP", "configureView"]
-- !private ["s28CustomDebugStringConvertibleP", "description"]
-- !private ["s28CustomDebugStringConvertibleP", "detailDescriptionLabel"]
-- !private ["s28CustomDebugStringConvertibleP", "detailItem"]
+- !private ["s28CustomDebugStringConvertibleP", "dob"]
+- !private ["s28CustomDebugStringConvertibleP", "gender"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "randomer"]
+- !private ["s28CustomDebugStringConvertibleP", "sd_setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "sd_setImage"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "URL"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "avatar"]
 - !private ["s23CustomStringConvertibleP", "configureView"]
-- !private ["s23CustomStringConvertibleP", "description"]
-- !private ["s23CustomStringConvertibleP", "detailDescriptionLabel"]
-- !private ["s23CustomStringConvertibleP", "detailItem"]
+- !private ["s23CustomStringConvertibleP", "dob"]
+- !private ["s23CustomStringConvertibleP", "gender"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "randomer"]
+- !private ["s23CustomStringConvertibleP", "sd_setImage"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- ["9Randomers20DetailViewControllerC", "NSDate"]
+- !private ["Se", "init"]
+- !private ["Se", "sd_setImage"]
+- !private ["Se", "text"]
+- ["9Randomers20DetailViewControllerC", "NSDictionary"]
+- !private ["9Randomers20DetailViewControllerC", "String"]
+- ["9Randomers20DetailViewControllerC", "UIImageView"]
 - ["9Randomers20DetailViewControllerC", "UILabel"]
+- !private ["9Randomers20DetailViewControllerC", "URL"]
+- ["9Randomers20DetailViewControllerC", "avatar"]
 - ["9Randomers20DetailViewControllerC", "configureView"]
 - ["9Randomers20DetailViewControllerC", "deinit"]
-- ["9Randomers20DetailViewControllerC", "detailDescriptionLabel"]
-- ["9Randomers20DetailViewControllerC", "detailItem"]
+- ["9Randomers20DetailViewControllerC", "dob"]
+- ["9Randomers20DetailViewControllerC", "gender"]
 - ["9Randomers20DetailViewControllerC", "init"]
+- ["9Randomers20DetailViewControllerC", "name"]
+- ["9Randomers20DetailViewControllerC", "randomer"]
 - ["9Randomers20DetailViewControllerC", "viewDidLoad"]
+- !private ["SE", "init"]
+- !private ["SE", "sd_setImage"]
+- !private ["SE", "text"]
+- !private ["SQ", "URL"]
 - ["SQ", ""]
+- !private ["SQ", "avatar"]
 - !private ["SQ", "configureView"]
-- !private ["SQ", "description"]
-- !private ["SQ", "detailDescriptionLabel"]
-- !private ["SQ", "detailItem"]
+- !private ["SQ", "dob"]
+- !private ["SQ", "gender"]
+- !private ["SQ", "init"]
+- !private ["SQ", "name"]
+- !private ["SQ", "randomer"]
+- !private ["SQ", "sd_setImage"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "text"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "sd_setImage"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["SH", "URL"]
 - ["SH", ""]
+- !private ["SH", "avatar"]
 - !private ["SH", "configureView"]
-- !private ["SH", "description"]
-- !private ["SH", "detailDescriptionLabel"]
-- !private ["SH", "detailItem"]
+- !private ["SH", "dob"]
+- !private ["SH", "gender"]
+- !private ["SH", "init"]
+- !private ["SH", "name"]
+- !private ["SH", "randomer"]
+- !private ["SH", "sd_setImage"]
+- !private ["SH", "subscript"]
 - !private ["SH", "text"]
 - !private ["SH", "viewDidLoad"]
+- !private ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "avatar"]
 - !private ["So8NSCodingP", "configureView"]
-- !private ["So8NSCodingP", "description"]
-- !private ["So8NSCodingP", "detailDescriptionLabel"]
-- !private ["So8NSCodingP", "detailItem"]
+- !private ["So8NSCodingP", "dob"]
+- !private ["So8NSCodingP", "gender"]
+- !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "randomer"]
+- !private ["So8NSCodingP", "sd_setImage"]
+- !private ["So8NSCodingP", "subscript"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "viewDidLoad"]
-- !private ["So9NSCopyingP", "description"]
-- !private ["So6NSDateC", "description"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So12NSDictionaryC", "subscript"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "avatar"]
 - !private ["So26NSExtensionRequestHandlingP", "configureView"]
-- !private ["So26NSExtensionRequestHandlingP", "detailDescriptionLabel"]
-- !private ["So26NSExtensionRequestHandlingP", "detailItem"]
+- !private ["So26NSExtensionRequestHandlingP", "dob"]
+- !private ["So26NSExtensionRequestHandlingP", "gender"]
+- !private ["So26NSExtensionRequestHandlingP", "name"]
+- !private ["So26NSExtensionRequestHandlingP", "randomer"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- ["So8NSObjectC", "NSDate"]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- ["So8NSObjectC", "NSDictionary"]
+- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "avatar"]
 - ["So8NSObjectC", "configureView"]
-- !private ["So8NSObjectC", "description"]
-- ["So8NSObjectC", "detailDescriptionLabel"]
-- ["So8NSObjectC", "detailItem"]
+- ["So8NSObjectC", "dob"]
+- ["So8NSObjectC", "gender"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "randomer"]
+- !private ["So8NSObjectC", "sd_setImage"]
+- !private ["So8NSObjectC", "subscript"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "avatar"]
 - !private ["So8NSObjectP", "configureView"]
-- !private ["So8NSObjectP", "description"]
-- !private ["So8NSObjectP", "detailDescriptionLabel"]
-- !private ["So8NSObjectP", "detailItem"]
+- !private ["So8NSObjectP", "dob"]
+- !private ["So8NSObjectP", "gender"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "randomer"]
+- !private ["So8NSObjectP", "sd_setImage"]
+- !private ["So8NSObjectP", "subscript"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "viewDidLoad"]
-- !private ["So14NSSecureCodingP", "description"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["Sq", "sd_setImage"]
+- !private ["Sq", "text"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "subscript"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "sd_setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "sd_setImage"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "sd_setImage"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "avatar"]
 - !private ["So21UIAppearanceContainerP", "configureView"]
-- !private ["So21UIAppearanceContainerP", "detailDescriptionLabel"]
-- !private ["So21UIAppearanceContainerP", "detailItem"]
+- !private ["So21UIAppearanceContainerP", "dob"]
+- !private ["So21UIAppearanceContainerP", "gender"]
+- !private ["So21UIAppearanceContainerP", "name"]
+- !private ["So21UIAppearanceContainerP", "randomer"]
+- !private ["So21UIAppearanceContainerP", "sd_setImage"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "URL"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "avatar"]
 - !private ["So18UIContentContainerP", "configureView"]
-- !private ["So18UIContentContainerP", "detailDescriptionLabel"]
-- !private ["So18UIContentContainerP", "detailItem"]
+- !private ["So18UIContentContainerP", "dob"]
+- !private ["So18UIContentContainerP", "gender"]
+- !private ["So18UIContentContainerP", "name"]
+- !private ["So18UIContentContainerP", "randomer"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "sd_setImage"]
 - !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "sd_setImage"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "avatar"]
 - !private ["So18UIFocusEnvironmentP", "configureView"]
-- !private ["So18UIFocusEnvironmentP", "detailDescriptionLabel"]
-- !private ["So18UIFocusEnvironmentP", "detailItem"]
+- !private ["So18UIFocusEnvironmentP", "dob"]
+- !private ["So18UIFocusEnvironmentP", "gender"]
+- !private ["So18UIFocusEnvironmentP", "name"]
+- !private ["So18UIFocusEnvironmentP", "randomer"]
+- !private ["So18UIFocusEnvironmentP", "sd_setImage"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "sd_setImage"]
 - !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "sd_setImage"]
 - !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So11UIImageViewC", "sd_setImage"]
 - !private ["So7UILabelC", "text"]
+- !private ["So24UILargeContentViewerItemP", "sd_setImage"]
 - !private ["So24UILargeContentViewerItemP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "avatar"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureView"]
-- !private ["So30UIPasteConfigurationSupportingP", "detailDescriptionLabel"]
-- !private ["So30UIPasteConfigurationSupportingP", "detailItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "dob"]
+- !private ["So30UIPasteConfigurationSupportingP", "gender"]
+- !private ["So30UIPasteConfigurationSupportingP", "name"]
+- !private ["So30UIPasteConfigurationSupportingP", "randomer"]
+- !private ["So30UIPasteConfigurationSupportingP", "sd_setImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
-- ["So11UIResponderC", "NSDate"]
+- ["So11UIResponderC", "NSDictionary"]
+- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "avatar"]
 - ["So11UIResponderC", "configureView"]
-- ["So11UIResponderC", "detailDescriptionLabel"]
-- ["So11UIResponderC", "detailItem"]
+- ["So11UIResponderC", "dob"]
+- ["So11UIResponderC", "gender"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "name"]
+- ["So11UIResponderC", "randomer"]
+- !private ["So11UIResponderC", "sd_setImage"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "avatar"]
 - !private ["So30UIResponderStandardEditActionsP", "configureView"]
-- !private ["So30UIResponderStandardEditActionsP", "detailDescriptionLabel"]
-- !private ["So30UIResponderStandardEditActionsP", "detailItem"]
+- !private ["So30UIResponderStandardEditActionsP", "dob"]
+- !private ["So30UIResponderStandardEditActionsP", "gender"]
+- !private ["So30UIResponderStandardEditActionsP", "name"]
+- !private ["So30UIResponderStandardEditActionsP", "randomer"]
+- !private ["So30UIResponderStandardEditActionsP", "sd_setImage"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "URL"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "avatar"]
 - !private ["So16UIStateRestoringP", "configureView"]
-- !private ["So16UIStateRestoringP", "detailDescriptionLabel"]
-- !private ["So16UIStateRestoringP", "detailItem"]
+- !private ["So16UIStateRestoringP", "dob"]
+- !private ["So16UIStateRestoringP", "gender"]
+- !private ["So16UIStateRestoringP", "name"]
+- !private ["So16UIStateRestoringP", "randomer"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "avatar"]
 - !private ["So18UITraitEnvironmentP", "configureView"]
-- !private ["So18UITraitEnvironmentP", "detailDescriptionLabel"]
-- !private ["So18UITraitEnvironmentP", "detailItem"]
+- !private ["So18UITraitEnvironmentP", "dob"]
+- !private ["So18UITraitEnvironmentP", "gender"]
+- !private ["So18UITraitEnvironmentP", "name"]
+- !private ["So18UITraitEnvironmentP", "randomer"]
+- !private ["So18UITraitEnvironmentP", "sd_setImage"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "avatar"]
 - !private ["So23UIUserActivityRestoringP", "configureView"]
-- !private ["So23UIUserActivityRestoringP", "detailDescriptionLabel"]
-- !private ["So23UIUserActivityRestoringP", "detailItem"]
+- !private ["So23UIUserActivityRestoringP", "dob"]
+- !private ["So23UIUserActivityRestoringP", "gender"]
+- !private ["So23UIUserActivityRestoringP", "name"]
+- !private ["So23UIUserActivityRestoringP", "randomer"]
+- !private ["So23UIUserActivityRestoringP", "sd_setImage"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "sd_setImage"]
 - !private ["So6UIViewC", "text"]
-- ["So16UIViewControllerC", "NSDate"]
+- ["So16UIViewControllerC", "NSDictionary"]
+- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
+- !private ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "avatar"]
 - ["So16UIViewControllerC", "configureView"]
-- ["So16UIViewControllerC", "detailDescriptionLabel"]
-- ["So16UIViewControllerC", "detailItem"]
+- ["So16UIViewControllerC", "dob"]
+- ["So16UIViewControllerC", "gender"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "name"]
+- ["So16UIViewControllerC", "randomer"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "description"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "description"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "avatar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "description"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "detailDescriptionLabel"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "detailItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dob"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "gender"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "randomer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "avatar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureView"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "description"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detailDescriptionLabel"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detailItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dob"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "gender"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "randomer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sd_setImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "sd_setImage"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "sd_setImage"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
 - "9Randomers20DetailViewControllerC"
+- !private "SE"
 - "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So6NSDateC"
+- !private "So12NSDictionaryC"
 - "So26NSExtensionRequestHandlingP"
+- !private "So17NSFastEnumerationP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -206,6 +379,7 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So11UIImageViewC"
 - !private "So7UILabelC"
 - !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
@@ -216,10 +390,13 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "10Foundation3URLV"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -236,6 +413,109 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefresh-umbrella.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ExtendedCacheData.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Metadata.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImage.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView+WebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDDiskCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDMemoryCache.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageFrame.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDefine.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheDefine.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderConfig.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/WKWebView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/NSBundle+MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIScrollView+MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefresh.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+Transform.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIView+MJExtension.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/UIScrollView+MJExtension.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshStateHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshGifHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshNormalHeader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageHEICCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGIFCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageAPNGCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageIOAnimatedCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoder.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCachesManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageLoadersManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCodersManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderResponseModifier.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderRequestModifier.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageTransformer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCoderHelper.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDGraphicsImageRenderer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheKeyFilter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackStateFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoStateFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackGifFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoGifFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshBackNormalFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoNormalFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshAutoFooter.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImagePlayer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCacheSerializer.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageError.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOptionsProcessor.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageIndicator.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderDecryptor.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageGraphics.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFCompatibilityMacros.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshComponent.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Headers/MJRefreshConst.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MemoryCacheCost.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageView.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+Compatibility.h"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/chengrosman/Desktop/Projects/Randomers/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -247,6 +527,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "93487aa40c604fc4df4bacf37c105a67"
+interface-hash: "ac290c2252286e9819fbf32c96d18e3f"
